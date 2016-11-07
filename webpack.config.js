@@ -19,24 +19,30 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.less$/,
-                loader: 'style-loader!css-loader!less-loader'
-            },
-            {
                 test: /\.css$/,
-                loader: "style!css"
+                // loader: "style-loader!css-loader"  初始
+                // loader: "style-loader!css-loader?root=./img" root参数
+                // loader: "style-loader!css-loader?modules" modules参数
+                // loader: "style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]" localIdentName参数
+                // loader: "style-loader!css-loader?minimize" minimize参数
+                // loader: "style-loader!css-loader?modules&camelCase" camelCase参数
+                loader: "style!css-loader?modules&camelCase"
             },
             {
                 // 在页面中加载图片示例：var imgstr = require("./imgs/3.png");
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loaders: [
-                    'url?limit=5012&name=./static/images/[name]_[hash].[ext]'
+                    'url?limit=8&name=[name]_[hash].[ext]'
                     // 'image-webpack?{bypassOnDebug:true, progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
                 ]
             },
             {
                 test: /\.html$/,
                 loader: 'html'
+            },
+            {
+                test: /\.(ejs|tpl|tmpl)$/,
+                loader: 'ejs'
             },
             {
                 // 编译es6
