@@ -3,3 +3,4 @@
 #dist/为打包后输出的文件夹
 node_modules
 .idea/
+dist/

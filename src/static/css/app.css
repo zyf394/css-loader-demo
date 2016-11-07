@@ -1,45 +1,43 @@
-// root参数
-// .app{
-//   text-align: center;
-//   h1{
-//     background-color: #f0f0f0;
-
-//     &::before {
-//       content: '';
-//       display: inline-block;
-//       background: url(/test.png) no-repeat;
-//       background-size: contain;
-//       width: 16px;
-//       height: 16px;
-//     }
-//   }
-// }
-
-// modules参数
-// .app{  
-//   text-align: center;
-// }
-
-
-// localIdentName参数
-// .title{
-//   font-size: 16px;
-// }
-// .desc{  
-//   text-align: center;
-// }
-
-
-// minimize参数
-// .title{
-//   font-size: 16px;
-// }
-// .desc{  
-//   text-align: center;
-// }
-
-
 // camelCase参数
-.my-title{
+.my-title {
  font-size: 16px;
 }
+
+
+/*.app{ // root参数
+  text-align: center;
+  h1{
+    background-color: #f0f0f0;
+    
+    &::before {
+      content: '';
+      display: inline-block;
+      background: url(/test.png) no-repeat;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}*/
+
+
+/*.app{  // modules参数
+  text-align: center;
+}*/
+
+
+
+/*.title{ // localIdentName参数
+  font-size: 16px;
+}
+.desc{  
+  text-align: center;
+}*/
+
+
+/*.title{ // minimize参数
+  font-size: 16px;
+}
+.desc{  
+  text-align: center;
+}*/
