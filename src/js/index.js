@@ -19,12 +19,13 @@ let App = {
         });
 
     },
-    
+
     render: function (data) {
         let me = this;
         me.$el.innerHTML= (me.appTemplate({data: data}));
     }
 
 };
+
 
 App.init();

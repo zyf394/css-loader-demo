@@ -5,9 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         common:[
-            "./src/js/common/rem.js",
-            "./src/js/common/tmpl.js",
-            "./src/js/common/log.js"
+            "./src/js/common/rem.js"
         ],
         index: "./src/js/index.js"
     },
@@ -25,7 +23,6 @@ module.exports = {
                 // loader: "style-loader!css-loader?modules" modules参数
                 // loader: "style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]" localIdentName参数
                 // loader: "style-loader!css-loader?minimize" minimize参数
-                // loader: "style-loader!css-loader?modules&camelCase" camelCase参数
                 loader: "style!css-loader?modules&camelCase"
             },
             {
